@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+.slide-img{
+  opacity: 0.6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slide-content{
+  color:black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+  margin: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card:hover{
+  background-color: antiquewhite;
+  color:darkslategray;
+  border-radius: 50px;
+}
+
+.card{
+  height: 13rem;
+}
+
+.item1 , .item2, .item3, .item4, .item5, .item6{
+  display: flex;
+  flex-direction: row;
+}
+
+.item-img{
+  height: 10rem;
+  width: 10rem;
+}
+
+.food-items{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px ;
+}
+
+.item-para{
+  margin-top: 50px;
+}
+
+form{
+  background-color: beige;
+  margin-top: 80px;
+}
+
+.navbar {
+  background-color: #343a40; 
+}
+
+#footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .slide-content {
+    font-size: 1.2rem;
   }
-  to {
-    transform: rotate(360deg);
+  .cards {
+    display: flex;
+    flex-direction: column;
   }
+
+  .food-items{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5,
+  .item6 {
+    flex: 1 0 100%;
+  }
+ .slide-img{
+  height:350px;
+ }
 }
